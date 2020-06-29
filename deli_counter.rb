@@ -23,9 +23,12 @@ end
 
 # This function just says what number the person is in line 
 >>>>>>> b044a1c6818ea1510a6f063f81ca44ca150e348e
-def take_a_number(katz_deli, name)
-  katz_deli.push(name)
-  puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+$counter = 0
+def take_a_number(katz_deli)
+  counter = counter + 1 
+  katz_deli.push(counter)
+  puts "You are numeber #{counter} in line."
+  
 end
 <<<<<<< HEAD
 # Helper function that that lets the person know if the line is empty or who is currently being served 
